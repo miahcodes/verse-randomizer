@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bible Verse Randomizer</title>
+    <meta
+      name="description"
+      content="A basic randomizer for Bible verses for encouragement."
+    />
+    <script type="module" src="./verses.js"></script>
+  </head>
+  <body>
+    <div class="container mx-auto">
+      <!-- write code that has an input form with a dropdown select field for line name a dropdown select for line code and a submit button -->
+      <div
+        class="flex w-3/4 max-w-sm mx-auto justify-center items-center flex-wrap wrap h-screen flex-col"
+      >
+        <div class="text-center mb-10">
+          <h1 class="text-3xl font-bold mb-2">
+            📖 Bible Verse Randomizer
+          </h1>
+          <p>
+            Feeling down and in need of a pick-me-up?<br/>Our 📖 Bible verse randomizer is here to help! Receive an encouraging verse from the Bible to remind you of God's love and presence in your life.
+          </p>
+        </div>
+        <div id="output" class="text-center mb-6">
+          <p class="text-sm mb-2">Your Bible verse is:</p>
+          <blockquote><p id="random-verse">---</p></blockquote>
+        </div>
+        <div class="w-full text-center">
+          <button
+            id="randomize-button"
+            class="px-4 py-2 font-semibold text-sm bg-cyan-500 text-white rounded-full shadow-sm"
+          >
+            Get another verse
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </body>
+</html>
